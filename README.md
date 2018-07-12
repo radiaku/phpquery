@@ -1,7 +1,27 @@
-Moved from [code.google.com/archive/p/phpquery](https://code.google.com/archive/p/phpquery/)
+This is phpQuery, a PHP port of jQuery selectors, super useful for DOM traversal 
+and functional testing.
 
-# phpQuery - pq();
+It is originally by Tobiasz Cudnik:
 
-phpQuery is a server-side, chainable, CSS3 selector driven Document Object Model (DOM) API based on jQuery JavaScript Library.
+http://code.google.com/p/phpquery/
 
-Library is written in PHP5 and provides additional Command Line Interface (CLI).
+And was released under the MIT license.
+
+We've cloned it into github because no issues have been fixed upstream in the 
+last two years and we needed to fix a bug relating to the serialize()
+method to get our functional tests to work. You can find our github
+repository here:
+
+https://github.com/punkave/phpQuery
+
+"What did you fix?" 
+
+Our initial commit includes a fix for the serialize() method, crucial to do 
+form submissions (a big deal for functional testing). See the commit history
+in github for any later changes.
+
+- P'unk Avenue
+
+=================
+
+Update for my own use, support for PHP 5.3.0
